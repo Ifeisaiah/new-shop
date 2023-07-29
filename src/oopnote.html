@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP basics</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+
+const set = new Set([1, 2, 3, 3, 4, 5, 5, 6]);
+console.log(set.size);
+
+    class Animal {
+        constructor(name) {
+            this.name = name;
+        }
+
+        eat() {
+            console.log(`${this.name} is eating some food`)
+        }
+    }
+
+    class Dog extends Animal {
+        bark () {
+            console.log(`${this.name} is barking`)
+        }
+    }
+
+    const myDog = new Dog('yinyin');
+
+    myDog.eat()
+    myDog.bark()
+</script>
+</html>
